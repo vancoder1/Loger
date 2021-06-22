@@ -1,0 +1,7 @@
+D:\Programming\ItSTEP\C#\Homework10(Ivan Zaporozhets)\loger_app\loger_app\bin\Debug\loger_app.exe.config
+D:\Programming\ItSTEP\C#\Homework10(Ivan Zaporozhets)\loger_app\loger_app\bin\Debug\loger_app.exe
+D:\Programming\ItSTEP\C#\Homework10(Ivan Zaporozhets)\loger_app\loger_app\bin\Debug\loger_app.pdb
+D:\Programming\ItSTEP\C#\Homework10(Ivan Zaporozhets)\loger_app\loger_app\obj\Debug\loger_app.csproj.AssemblyReference.cache
+D:\Programming\ItSTEP\C#\Homework10(Ivan Zaporozhets)\loger_app\loger_app\obj\Debug\loger_app.csproj.CoreCompileInputs.cache
+D:\Programming\ItSTEP\C#\Homework10(Ivan Zaporozhets)\loger_app\loger_app\obj\Debug\loger_app.exe
+D:\Programming\ItSTEP\C#\Homework10(Ivan Zaporozhets)\loger_app\loger_app\obj\Debug\loger_app.pdb

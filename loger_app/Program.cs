@@ -10,7 +10,8 @@ namespace loger_app
     {
         static void Main(string[] args)
         {
-
+            Console.Write("lls: ");
+            Console.WriteLine("sadasd");
         }
     }
 }
