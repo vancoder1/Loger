@@ -23,7 +23,7 @@ namespace loger_app
             }
         }
 
-        public void WriteFile(string message, int level)
+        public void WriteLog(string message, int level)
         {
             FileStream stream = null;
 
