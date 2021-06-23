@@ -46,10 +46,11 @@ namespace loger_app
             {
                 stream = new FileStream(
                     _path,
-                    FileMode.Create,
+                    FileMode.Append,
                     FileAccess.Write,
                     FileShare.None
                 );
+                
                 StreamWriter writelog = new StreamWriter(stream, Encoding.UTF8);
 
                 if (level == 1)
