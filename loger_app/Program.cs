@@ -11,7 +11,7 @@ namespace loger_app
         static void Main(string[] args)
         {
             Loger loger = new Loger();
-            loger.WriteLog("this is error", 4);
+            loger.WriteLog("this is fatal error", 5);
         }
     }
 }

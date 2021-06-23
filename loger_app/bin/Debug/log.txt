@@ -1,2 +1,3 @@
 ﻿Info: this is message
 Error: this is error
+Fatal: this is fatal error
