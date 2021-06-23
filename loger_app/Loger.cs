@@ -10,8 +10,8 @@ namespace loger_app
     class Loger
     {
         private string _path = "log.txt";
-        private bool _date;
-        private bool _username;
+        private bool _date = true;
+        private bool _username = true;
         public string Path {
             get
             {
@@ -23,8 +23,16 @@ namespace loger_app
             }
         }
 
-        public void WriteFile(string message, int level)
+        public Loger(string path)
         {
+            _path = path;
+        }
+        public Loger()
+        { }
+
+        public void WriteLog(string message, int level)
+        {
+
             FileStream stream = null;
 
             /* level 1 = Debug; 
@@ -70,6 +78,8 @@ namespace loger_app
                 }
 
                 writelog.WriteLine(message);
+
+                writelog.Flush();
             }
             catch (ArgumentException)
             {
