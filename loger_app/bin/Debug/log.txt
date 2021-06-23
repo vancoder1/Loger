@@ -1,2 +1,1 @@
-﻿Info: this is message
-Error: this is error
+﻿
