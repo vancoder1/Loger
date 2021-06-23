@@ -22,6 +22,28 @@ namespace loger_app
                 _path = value;
             }
         }
+        public bool DateAdd
+        {
+            get
+            {
+                return _date;
+            }
+            set
+            {
+                _date = value;
+            }
+        }
+        public bool UserNameAdd
+        {
+            get
+            {
+                return _username;
+            }
+            set
+            {
+                _username = value;
+            }
+        }
 
         public Loger(string path)
         {
@@ -55,23 +77,23 @@ namespace loger_app
 
                 if (level == 1)
                 {
-                    writelog.Write(" - " + "Debug: ");
+                    writelog.Write("- " + "Debug: ");
                 }
                 else if (level == 2)
                 {
-                    writelog.Write(" - " + "Info: ");
+                    writelog.Write("- " + "Info: ");
                 }
                 else if (level == 3)
                 {
-                    writelog.Write(" - " + "Warn: ");
+                    writelog.Write("- " + "Warn: ");
                 }
                 else if (level == 4)
                 {
-                    writelog.Write(" - " + "Error: ");
+                    writelog.Write("- " + "Error: ");
                 }
                 else if (level == 5)
                 {
-                    writelog.Write("-" + "Fatal: ");
+                    writelog.Write("- " + "Fatal: ");
                 }
                 else
                 {
@@ -79,8 +101,15 @@ namespace loger_app
                 }
 
                 writelog.WriteLine(message);
-                writelog.WriteLine("   Time: " + DateTime.UtcNow);
-                writelog.WriteLine("   UserName: " + Environment.UserName + "\n");
+                if (_date == true)
+                {
+                    writelog.WriteLine("  Time: " + DateTime.UtcNow);
+                }
+                if (_username == true)
+                {
+                    writelog.WriteLine("  UserName: " + Environment.UserName);
+                }
+                writelog.WriteLine(); // делаю отступ
 
                 writelog.Flush();
             }

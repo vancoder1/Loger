@@ -1,1 +1,11 @@
 ﻿
+- Error: this is error only with time
+  Time: 23.06.2021 12:17:29
+
+- Warn: this is warning only with username
+  Time: 23.06.2021 12:17:29
+
+- Fatal: this is fatal error with both of them
+  Time: 23.06.2021 12:17:29
+  UserName: User
+
